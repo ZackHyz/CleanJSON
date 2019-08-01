@@ -565,6 +565,16 @@ extension CleanJSONKeyedDecodingContainer {
         
         if let value = try decoder.unbox(entry, as: type) { return value }
         
+        if let value = try decoder.unbox(entry, as: String.self) {
+            if let valueInt = Int(value) {
+                return Bool(valueInt != 0)
+            }
+        }
+        
+        if let value = try decoder.unbox(entry, as: Int.self) {
+            return Bool(value != 0)
+        }
+
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
             throw DecodingError.Keyed.keyNotFound(key, codingPath: decoder.codingPath)
@@ -581,6 +591,8 @@ extension CleanJSONKeyedDecodingContainer {
         
         if let value = try decoder.unbox(entry, as: type) { return value }
         
+        if let value = try decoder.unbox(entry, as: String.self) { return Int(value) }
+
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
             throw DecodingError.Keyed.keyNotFound(key, codingPath: decoder.codingPath)
@@ -597,6 +609,8 @@ extension CleanJSONKeyedDecodingContainer {
         
         if let value = try decoder.unbox(entry, as: type) { return value }
         
+        if let value = try decoder.unbox(entry, as: String.self) { return Int8(value) }
+
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
             throw DecodingError.Keyed.keyNotFound(key, codingPath: decoder.codingPath)
@@ -613,6 +627,8 @@ extension CleanJSONKeyedDecodingContainer {
         
         if let value = try decoder.unbox(entry, as: type) { return value }
         
+        if let value = try decoder.unbox(entry, as: String.self) { return Int16(value) }
+
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
             throw DecodingError.Keyed.keyNotFound(key, codingPath: decoder.codingPath)
@@ -629,6 +645,8 @@ extension CleanJSONKeyedDecodingContainer {
         
         if let value = try decoder.unbox(entry, as: type) { return value }
         
+        if let value = try decoder.unbox(entry, as: String.self) { return Int32(value) }
+
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
             throw DecodingError.Keyed.keyNotFound(key, codingPath: decoder.codingPath)
@@ -645,6 +663,8 @@ extension CleanJSONKeyedDecodingContainer {
         
         if let value = try decoder.unbox(entry, as: type) { return value }
         
+        if let value = try decoder.unbox(entry, as: String.self) { return Int64(value) }
+
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
             throw DecodingError.Keyed.keyNotFound(key, codingPath: decoder.codingPath)
@@ -661,6 +681,8 @@ extension CleanJSONKeyedDecodingContainer {
         
         if let value = try decoder.unbox(entry, as: type) { return value }
         
+        if let value = try decoder.unbox(entry, as: String.self) { return UInt(value) }
+
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
             throw DecodingError.Keyed.keyNotFound(key, codingPath: decoder.codingPath)
@@ -677,6 +699,8 @@ extension CleanJSONKeyedDecodingContainer {
         
         if let value = try decoder.unbox(entry, as: type) { return value }
         
+        if let value = try decoder.unbox(entry, as: String.self) { return UInt8(value) }
+
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
             throw DecodingError.Keyed.keyNotFound(key, codingPath: decoder.codingPath)
@@ -693,6 +717,8 @@ extension CleanJSONKeyedDecodingContainer {
         
         if let value = try decoder.unbox(entry, as: type) { return value }
         
+        if let value = try decoder.unbox(entry, as: String.self) { return UInt16(value) }
+
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
             throw DecodingError.Keyed.keyNotFound(key, codingPath: decoder.codingPath)
@@ -709,6 +735,8 @@ extension CleanJSONKeyedDecodingContainer {
         
         if let value = try decoder.unbox(entry, as: type) { return value }
         
+        if let value = try decoder.unbox(entry, as: String.self) { return UInt32(value) }
+
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
             throw DecodingError.Keyed.keyNotFound(key, codingPath: decoder.codingPath)
@@ -725,6 +753,8 @@ extension CleanJSONKeyedDecodingContainer {
         
         if let value = try decoder.unbox(entry, as: type) { return value }
         
+        if let value = try decoder.unbox(entry, as: String.self) { return UInt64(value) }
+
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
             throw DecodingError.Keyed.keyNotFound(key, codingPath: decoder.codingPath)
@@ -741,6 +771,8 @@ extension CleanJSONKeyedDecodingContainer {
         
         if let value = try decoder.unbox(entry, as: type) { return value }
         
+        if let value = try decoder.unbox(entry, as: String.self) { return Float(value) }
+
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
             throw DecodingError.Keyed.keyNotFound(key, codingPath: decoder.codingPath)
@@ -757,6 +789,9 @@ extension CleanJSONKeyedDecodingContainer {
         
         if let value = try decoder.unbox(entry, as: type) { return value }
         
+        if let value = try decoder.unbox(entry, as: String.self) { return Double(value) }
+
+        
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
             throw DecodingError.Keyed.keyNotFound(key, codingPath: decoder.codingPath)
@@ -770,8 +805,12 @@ extension CleanJSONKeyedDecodingContainer {
     @inline(__always)
     func decodeIfPresent(_ type: String.Type, forKey key: K) throws -> String? {
         guard contains(key), let entry = container[key.stringValue] else { return nil }
-        
+       // print("key:",key,"value:",entry,"codingPath:",codingPath)
         if let value = try decoder.unbox(entry, as: type) { return value }
+        
+        if let value = try decoder.unbox(entry, as: Int.self) { return String(value) }
+        if let value = try decoder.unbox(entry, as: Double.self) { return String(value) }
+        if let value = try decoder.unbox(entry, as: Bool.self) { return String(value) }
         
         switch decoder.options.valueNotFoundDecodingStrategy {
         case .throw:
@@ -872,12 +911,7 @@ private extension String {
             let topLevel = try? JSONSerialization.jsonObject(with: data) else { return nil }
         
         let decoder = _CleanJSONDecoder(referencing: topLevel, options: options)
-        #if swift(<5)
         guard let obj = try? decoder.unbox(topLevel, as: type) else { return nil }
-        
         return obj
-        #else
-        return try? decoder.unbox(topLevel, as: type)
-        #endif
     }
 }

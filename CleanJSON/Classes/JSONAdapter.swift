@@ -185,7 +185,7 @@ public extension JSONAdapter {
         return String.defaultValue
     }
     
-    @inline(__always)
+//    @inline(__always)
     func adapt(_ decoder: CleanDecoder) throws -> Date {
         guard let decoder = decoder as? _CleanJSONDecoder else { return Date.defaultValue }
         
