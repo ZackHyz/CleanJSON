@@ -24,6 +24,7 @@ struct TestModel<T: Codable>: Codable {
     let data: Data
     let url: URL?
     let dict: [String: T]
+    let enumTest: EnumTest
     
     struct Nested: Codable {
         let a: String
@@ -33,6 +34,17 @@ struct TestModel<T: Codable>: Codable {
     
     struct NotPresent: Codable {
         let a: String
+    }
+    enum EnumTest: Int,Codable,CaseDefaultable {
+        
+        case a = 1
+        case b
+        case c
+        case d
+        static var defaultCase: EnumTest {
+            return .a
+        }
+        
     }
 }
 
@@ -84,7 +96,8 @@ class ViewController: UIViewController {
                  "nested": "{\"a\": \"alpha\", \"b\": 1, \"c\": 2}",
                  "data": "",
                  "url": null,
-                 "dict": {"hello": 2}
+                 "dict": {"hello": 2},
+                 "enumTest": 5,
              }
         """#.data(using: .utf8)!
         
@@ -116,6 +129,20 @@ class ViewController: UIViewController {
             debugPrint("decimal:", model.decimal)
             debugPrint("data:", model.data)
             debugPrint("dict:", model.dict)
+            debugPrint("enumTest:", model.enumTest)
+            
+            switch model.enumTest {
+            case .a:
+                debugPrint("enumTest:", model.enumTest)
+            default:
+                debugPrint("enumTest:", model.enumTest)
+            }
+            let jsonString = model.toJSONString()!
+            debugPrint("jsonString:", jsonString)
+
+            let model2 = try decoder.decode(TestModel<Enum>.self, from: jsonString.data(using: .utf8)!)
+            debugPrint("model2:", model2)
+
         } catch {
             debugPrint(error)
         }

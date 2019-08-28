@@ -8,7 +8,6 @@
 
 import Foundation
 
-@usableFromInline
 final class _CleanJSONDecoder: CleanDecoder {
     
     /// The decoder's storage.

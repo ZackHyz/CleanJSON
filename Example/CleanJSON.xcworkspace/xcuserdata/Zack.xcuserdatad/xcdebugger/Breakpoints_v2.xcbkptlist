@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../CleanJSON/Classes/_CleanJSONDecoder+Unbox.swift"
+            timestampString = "586768795.600059"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "323"
+            endingLineNumber = "323"
+            landmarkName = "unbox(_:as:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../CleanJSON/Classes/DecodingError+CleanJSON.swift"
+            timestampString = "586768642.039343"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "keyNotFound(_:codingPath:isUnkeyed:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static (extension in CleanJSON):Swift.DecodingError.Nested.keyNotFound&lt;A where A: Swift.CodingKey&gt;(_: A, codingPath: Swift.Array&lt;Swift.CodingKey&gt;, isUnkeyed: Swift.Bool) -&gt; Swift.DecodingError"
+                  moduleName = "CleanJSON"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Zack/work/CleanJSON/CleanJSON/Classes/DecodingError+CleanJSON.swift"
+                  timestampString = "588655648.605929"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "211">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static (extension in CleanJSON):Swift.DecodingError.Nested.keyNotFound&lt;A where A: Swift.CodingKey&gt;(_: A, codingPath: Swift.Array&lt;Swift.CodingKey&gt;, isUnkeyed: Swift.Bool) -&gt; Swift.DecodingError"
+                  moduleName = "CleanJSON"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Zack/work/CleanJSON/CleanJSON/Classes/DecodingError+CleanJSON.swift"
+                  timestampString = "588655648.614694"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "257">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../CleanJSON/Classes/DecodingError+CleanJSON.swift"
+            timestampString = "586768642.039747"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "keyNotFound(_:codingPath:isUnkeyed:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static (extension in CleanJSON):Swift.DecodingError.Nested.keyNotFound&lt;A where A: Swift.CodingKey&gt;(_: A, codingPath: Swift.Array&lt;Swift.CodingKey&gt;, isUnkeyed: Swift.Bool) -&gt; Swift.DecodingError"
+                  moduleName = "CleanJSON"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Zack/work/CleanJSON/CleanJSON/Classes/DecodingError+CleanJSON.swift"
+                  timestampString = "588655648.619804"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "1114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static (extension in CleanJSON):Swift.DecodingError.Nested.keyNotFound&lt;A where A: Swift.CodingKey&gt;(_: A, codingPath: Swift.Array&lt;Swift.CodingKey&gt;, isUnkeyed: Swift.Bool) -&gt; Swift.DecodingError"
+                  moduleName = "CleanJSON"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Zack/work/CleanJSON/CleanJSON/Classes/DecodingError+CleanJSON.swift"
+                  timestampString = "588655648.62274"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "1134">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../CleanJSON/Classes/_CleanJSONDecoder.swift"
+            timestampString = "588655648.22618"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "container(keyedBy:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../CleanJSON/Classes/_CleanJSONDecoder.swift"
+            timestampString = "588655648.226686"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "unkeyedContainer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../CleanJSON/Classes/CleanJSONUnkeyedDecodingContainer.swift"
+            timestampString = "586768624.0530699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "408"
+            endingLineNumber = "408"
+            landmarkName = "nestedContainer(keyedBy:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../CleanJSON/Classes/CleanJSONUnkeyedDecodingContainer.swift"
+            timestampString = "586768627.481941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "451"
+            endingLineNumber = "451"
+            landmarkName = "nestedUnkeyedContainer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../CleanJSON/Classes/CleanJSONUnkeyedDecodingContainer.swift"
+            timestampString = "586768629.818892"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "418"
+            endingLineNumber = "418"
+            landmarkName = "nestedContainer(keyedBy:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../CleanJSON/Classes/CleanJSONUnkeyedDecodingContainer.swift"
+            timestampString = "586768631.884745"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "461"
+            endingLineNumber = "461"
+            landmarkName = "nestedUnkeyedContainer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../CleanJSON/Classes/CleanJSONUnkeyedDecodingContainer.swift"
+            timestampString = "586768634.204815"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "489"
+            endingLineNumber = "489"
+            landmarkName = "superDecoder()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
